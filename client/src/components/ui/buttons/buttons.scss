@@ -1,0 +1,36 @@
+@import "../../../scss/variable";
+//Join and Create Button
+.create-button {
+  all: unset;
+  padding: 5px 13px;
+  border-radius: 6px;
+  background: $color-10c;
+
+  color: #212020;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.join-create-button__layout {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+}
+
+//Tags
+.zone-tag {
+  border-radius: 3.75px;
+  background: linear-gradient(90deg, #FF680E -6.79%, #FA3364 100%);
+
+  padding: 7.5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5px;
+
+  @include font-family;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: normal;
+}

@@ -1,0 +1,90 @@
+@import "../../scss/variable";
+.home {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.home__tagline-layout {
+  display: inline-flex;
+  width: 70vw;
+  max-width: 1120px;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__tagline-heading {
+  color: $text-color;
+  @include font-family;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  & #span-1{
+    background: linear-gradient(180deg, #1adbff 0%, #0711FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+  }
+  & #span-2{
+    background: radial-gradient(50% 50% at 50% 50%, #E22AE1 53.65%, #FB8F23 78.65%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.home__tagline-content {
+  color: #DFDFDF;
+  text-align: center;
+  @include font-family;
+  width: 40vw;
+  max-width: 1120px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-break: break-word;
+
+}
+
+//Effect
+.home__effect-circle {
+  position: absolute;
+  align-self: center;
+  translate: 0 50% 0;
+  & svg{
+    max-width: 100%;
+  }
+}
+.home__effect-gradient-bottom {
+  display: inline-block;
+  width: 100vw;
+  height: 45vw;
+  border-radius: 50%;
+
+  position: fixed;
+  align-self: center;
+  bottom: 0  ;
+  translate: 0 80% 0;
+
+  background: linear-gradient(125deg, #0057FF 49.05%, #FF00D6 73.1%);
+  filter: blur(10vw);
+}
+
+//Animation
+.line-stream-layout {
+  display: flex;
+  flex-direction: row;
+  height:80vh;
+  gap: 80vw;
+  position: fixed;
+  align-self: center;
+
+}

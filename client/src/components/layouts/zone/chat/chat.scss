@@ -1,0 +1,161 @@
+@import "../../../../scss/variable";
+//Variable
+$padding: 20px;
+//Room State
+.room-state {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding: $padding;
+  justify-content: space-between;
+}
+
+.room-state-name, .room-state-property {
+  text-align: left;
+  @include font-family;
+}
+
+.room-state-name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: $text-color;
+}
+
+.room-state-property {
+  color: $extra-text-color;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+//Send Message
+.send-message {
+  flex-grow: 1;
+  width: 100%;
+  padding: $padding;
+  height: fit-content;
+}
+
+.send-message__layout {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  background: rgba(36, 36, 36, 0.50);
+  border-radius: 7.5px;
+
+}
+
+.send-message__input {
+  width: 100%;
+}
+
+.send-message__input[contenteditable] {
+  all: unset;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  display: block;
+  width: 100%;
+  @include font-family;
+  color: $text-color;
+  font-size: 15px;
+  font-weight: normal;
+  text-align: start;
+  overflow-y: auto;
+  max-height: 100px;
+
+  &:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #8c8c8c;
+
+  }
+
+  &:focus {
+    text-align: start;
+  }
+}
+
+//Chat Box
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 450px;
+  justify-content: stretch;
+
+  background-color: rgb(7, 7, 7, 0.95);
+  box-shadow: -2px 0px 50px 0px rgba(0, 0, 0, 0.25);
+}
+
+//Chat State
+.chat-state {
+  display: flex;
+  height: 900px;
+  width: 100%;
+
+}
+
+//Message
+$gap: 10px;
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: $gap;
+}
+
+.message-layout {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  padding: $padding;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: $gap;
+
+  border-radius: 5px 18px 18px 18px;
+  background: #222126;
+}
+
+.message-user__layout {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+  width: 100%;
+}
+
+.message-user__name {
+  color: $text-color;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: left;
+}
+
+.message-user__time {
+  color: $extra-text-color;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.message-content {
+  color: $text-color;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: left;
+}

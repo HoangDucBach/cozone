@@ -1,0 +1,117 @@
+@import "../../../scss/variable";
+//Short zone
+.short-zone {
+  @include font-family;
+  min-width: 460px;
+  min-height: 275px;
+  position: relative;
+  padding: 35px;
+  border-radius: 18px;
+  background: #070707;
+  overflow: clip;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.short-zone-buttons__layout {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+
+}
+
+.short-zone-button__create {
+  all: unset;
+  padding: 5px 13px;
+  border-radius: 6px;
+  background: $color-10c;
+
+  color: #212020;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.short-zone-title {
+  word-break: break-word;
+  text-align: left;
+  color: $text-color;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.short-zone-content {
+  word-break: break-word;
+  text-align: left;
+  color: $text-color;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 200px;
+
+}
+
+.short-zone-gradient-color {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 0;
+}
+
+//Short zone together
+.short-together {
+  position: relative;
+  width: 770px;
+  height: 435px;
+  padding: 100px;
+  box-shadow: 0 0 200px 50px #000 inset;
+  background-color: transparent;
+  border-radius: 20px;
+
+}
+
+.short-together-image {
+  position: absolute;
+  box-shadow: 0 4px 200px 50px #000 inset;
+  background-color: transparent;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+}
+
+.short-together-tagline__heading {
+  color: var(--Text, #F9F9F9);
+  font-size: 36.088px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.short-together-tagline__content {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  max-width: 180px;
+  word-break: break-word;
+}
+
+.short-together-buttons__layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

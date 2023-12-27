@@ -1,0 +1,163 @@
+@import "../../scss/variable";
+//Main
+.my-zone {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  @include font-family;
+  overflow: hidden;
+}
+
+//Heading
+.my-zone-tagline-layout {
+  display: flex;
+  width: 100%;
+  max-width: 628px;
+  max-height: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.my-zone-tagline-heading-1 {
+  color: $text-color;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.my-zone-tagline-heading-2 {
+  color: $color-30b;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left;
+
+  & #span-1 {
+    color: $color-30a;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.my-zone-tagline-content {
+  color: $text-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+
+  & #span-1 {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+//Effect
+.my-zone__effect-gradient__bottom {
+  position: absolute;
+  background: linear-gradient(233deg, #0057FF 21.63%, #FF00D6 32.36%, #FF9412 53.12%);
+  filter: blur(17vw);
+  width: 80vw;
+  height: 80vh;
+  border-radius: 100%;
+
+  left: 0;
+  top: 0;
+  translate: -50% 50%;
+  z-index: -999;
+}
+.my-zone__effect-gradient_middle {
+  position: absolute;
+  background: linear-gradient(277deg, #06F 18.9%, #FF33EB 48.47%, #FF680E 88.03%);
+  filter: blur(20vw);
+
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  left: 50%;
+
+}
+//Join Button
+.my-zone-join-layout {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  &:active{
+    scale: 0.9;
+  }
+}
+
+.my-zone-join-button {
+  all: unset;
+  display: flex;
+  width: 60px;
+  height: 35px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100px;
+  background: $color-30a;
+  box-shadow: 0 0 150px 0 #0258FF;
+
+  color: $text-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  90% {
+    transform: scale(0.75);
+  }
+  100%{
+    transform: scale(0.7);
+  }
+}
+
+@keyframes shadowLight {
+  10% {
+    filter: drop-shadow(0px 0px 1px rgba(198, 198, 198, 0.25));
+  }
+}
+
+.my-zone-join-button__icon {
+  translate: -90% 4%;
+  animation: scaleAnimation 3.5s infinite
+  cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+.short-zone-button__join {
+  all: unset;
+}
+
+//Zone
+.zone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}

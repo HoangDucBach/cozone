@@ -1,0 +1,29 @@
+@import "variable";
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+a{
+  all: unset;
+}
+html {
+  scroll-behavior: smooth;
+}
+main{
+  height: 100%;
+  width: 100%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
