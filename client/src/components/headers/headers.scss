@@ -1,0 +1,30 @@
+@import "../../scss/variable";
+$padding:50px;
+.server-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.server-navbar__title {
+  color: $text-color;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.server-navbar__create-button {
+  all: unset;
+  border-radius: 5px;
+
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  background: $color-30a;
+}

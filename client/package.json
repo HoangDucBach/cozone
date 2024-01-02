@@ -13,6 +13,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
     "scss": "^0.2.4",
+    "socket.io-client": "^4.7.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,6 +41,9 @@
     ]
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "axios": "^1.6.3",
+    "jquery": "^3.7.1",
     "react-dotenv": "^0.1.3"
   }
 }

@@ -1,3 +1,5 @@
+import {Room} from "./Room";
+
 enum BotEyeType {
     NORMAL,
     ANGRY,
@@ -11,11 +13,12 @@ enum BotMouthType {
 }
 
 class Avatar {
-    private backgroundColor: String;
-    private botColor: String;
+    private backgroundColor: string;
+    private botColor: string;
     private eye: BotEyeType;
     private mouth: BotMouthType;
-    constructor(backgroundColor: String, botColor: String, eye: BotEyeType, mouth: BotMouthType) {
+
+    constructor(backgroundColor: string, botColor: string, eye: BotEyeType, mouth: BotMouthType) {
         this.backgroundColor = backgroundColor;
         this.botColor = botColor;
         this.eye = eye;
@@ -25,36 +28,39 @@ class Avatar {
 }
 
 export class User {
-    private name: String;
+    private name: string;
     private socketId: String;
-    private avatar: Avatar;
+    private avatar: Avatar | null;
+    private rooms: Array<Room> = [];
 
-    constructor(name: String, socketId: String, avatar: Avatar) {
+    constructor(name: string, socketId: string, avatar: Avatar | null) {
+
         this.name = name || "Anonymous";
-        this.socketId = socketId || null;
+        // @ts-ignore
+        this.socketId = String(socketId) || null;
         this.avatar = avatar || null;
     }
 
     /**
      * Setter and getter.
      */
-    public getName(): String {
+    public getName(): string {
         return this.name;
     }
 
-    public getSocketId(): String {
-        return this.socketId;
+    public getSocketId(): string {
+        return <string>this.socketId;
     }
 
-    public getAvatar(): Avatar {
+    public getAvatar(): Avatar |null {
         return this.avatar;
     }
 
-    public setName(name: String) {
+    public setName(name: string) {
         this.name = name;
     }
 
-    public setSocketId(socketId:String) {
+    public setSocketId(socketId: string) {
         this.socketId = socketId;
     }
 
@@ -67,5 +73,13 @@ export class User {
      */
     public sendMessage(): void {
 
+    }
+
+    public joinRoom(room: Room) {
+        this.rooms.push(room);
+    }
+
+    public leaveRoom(room: Room) {
+        this.rooms = this.rooms.filter((r) => r !== room);
     }
 }

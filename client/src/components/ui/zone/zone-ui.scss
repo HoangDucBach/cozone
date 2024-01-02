@@ -115,3 +115,64 @@
   flex-direction: row;
   align-items: center;
 }
+//Room Card
+.room-card {
+  display: flex;
+  width: 246px;
+  height: 351px;
+  padding: 15px;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 10px;
+  gap: 5%;
+  background: #161616;
+}
+.room-card__info-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+.room-card__title {
+  color: $text-color;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.room-card__time-title {
+  color: $extra-text-color;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.room-card__time-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.room-card__time {
+  color: $text-color;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.room-card__button--join {
+  all: unset;
+
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-radius: 200px;
+  background: $color-30a;
+
+  color: $text-color;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

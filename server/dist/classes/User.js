@@ -27,6 +27,9 @@ class User {
         this.socketId = socketId || null;
         this.avatar = avatar || null;
     }
+    /**
+     * Setter and getter.
+     */
     getName() {
         return this.name;
     }
@@ -38,6 +41,17 @@ class User {
     }
     setName(name) {
         this.name = name;
+    }
+    setSocketId(socketId) {
+        this.socketId = socketId;
+    }
+    setAvatar(avatar) {
+        this.avatar = avatar;
+    }
+    /**
+     * Method.
+     */
+    sendMessage() {
     }
 }
 exports.User = User;

@@ -1,0 +1,95 @@
+@import "../../../../scss/variable";
+.server {
+  width: 100%;
+  height: 100%;
+  padding: 25px 50px;
+}
+.create-room input, {
+  all: unset;
+  text-align: start;
+  color: $text-color;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &::placeholder{
+    color: #bbbbbb;
+    font-size: 22.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+}
+
+.create-room-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.create-room-form__title {
+  color: #FFF;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  & #span-1{
+    color: $color-30a;
+    text-shadow: 0 0 30px $color-30a;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.field-input{
+  display: flex;
+  width: 420px;
+  height: 80px;
+  padding: 8px ;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+  background: #161616;
+}
+.field-input__layout-title-input {
+  display: flex;
+  flex-direction: column;
+}
+.field-input__title{
+  text-align: start;
+  color: var(--Extra-Text, #404040);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+//Server Rooms
+.server-rooms {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.create-room-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-room-form__button {
+  all: unset;
+  width: fit-content;
+  display: flex;
+  height: fit-content;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-30a;
+  border-radius: 10px;
+
+  color: $text-color;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

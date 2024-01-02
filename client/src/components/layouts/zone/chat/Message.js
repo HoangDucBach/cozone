@@ -1,4 +1,5 @@
 import "./chat.scss";
+import $ from 'jquery';
 export function Message(props) {
     return (
         <div className="message">

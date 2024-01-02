@@ -70,7 +70,6 @@ export function MyZone() {
             {/*</div>*/}
             {/*<div className="my-zone__effect-gradien__bottom"></div>*/}
             {/*<div className="my-zone__effect-gradient_middle"></div>*/}
-            <Outlet/>
             <ZoneContent/>
             <ChatBox/>
         </main>

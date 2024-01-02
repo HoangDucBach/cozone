@@ -19,14 +19,14 @@ export function ZoneNavbar() {
                         fill="#3F3F3F"/>
                 </svg>
             </a>
-            <a className="zone-navbar-icon" id="watch">
+            <Link className="zone-navbar-icon" id="watch" to="/myzone/watch">
                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M3.00146 1.99172H20.0015C20.7029 1.99172 21.2715 2.56032 21.2715 3.26172V12.2617C21.2715 12.9631 20.7029 13.5317 20.0015 13.5317H3.00147C2.30006 13.5317 1.73146 12.9631 1.73146 12.2617V3.26172C1.73146 2.56032 2.30006 1.99172 3.00146 1.99172ZM0.00146484 3.26172C0.00146484 1.60486 1.34461 0.261719 3.00146 0.261719H20.0015C21.6583 0.261719 23.0015 1.60486 23.0015 3.26172V12.2617C23.0015 13.9186 21.6583 15.2617 20.0015 15.2617H3.00147C1.34461 15.2617 0.00146484 13.9186 0.00146484 12.2617V3.26172ZM14.5015 8.62774C15.1681 8.24284 15.1681 7.28059 14.5015 6.89569L10.7515 4.73063C10.0848 4.34573 9.25146 4.82685 9.25146 5.59665V9.92678C9.25146 10.6966 10.0848 11.1777 10.7515 10.7928L14.5015 8.62774Z"
                           fill="#45403E"/>
                 </svg>
-            </a>
-            <a className="zone-navbar-icon" id="server">
+            </Link>
+            <Link className="zone-navbar-icon" id="server" to="/myzone/server">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                     <path d="M12.5014 24.2646C18.8534 24.2646 24.0028 19.1151 24.0028 12.7631C24.0028 6.41108 18.8534 1.26172 12.5014 1.26172C6.14936 1.26172 1 6.41108 1 12.7631C1 19.1151 6.14936 24.2646 12.5014 24.2646Z" stroke="#404040" stroke-width="1.72521" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1.57495 13.3384L7.90073 15.6387L6.75059 19.6642L7.90073 23.1146" stroke="#404040" stroke-width="1.72521" stroke-linecap="round" stroke-linejoin="round"/>
@@ -34,7 +34,7 @@ export function ZoneNavbar() {
                     <path d="M20.5525 5.28711L19.9774 7.01232L15.9519 7.58739V11.0378L18.8273 9.88768H21.1275L23.4278 11.0378" stroke="#404040" stroke-width="1.72521" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M1.57495 11.0377L4.45031 8.7374L7.32566 8.16233L9.62594 4.7119L8.4758 2.41162" stroke="#404040" stroke-width="1.72521" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-            </a>
+            </Link>
         </nav>
     );
 }

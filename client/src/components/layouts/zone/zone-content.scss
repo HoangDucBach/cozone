@@ -1,7 +1,10 @@
 @import "../../../scss/variable";
 //Zone Content
 .zone-content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: rgb(7, 7, 7, 0.95);
-
+  align-items: center;
+  justify-content: center;
 }

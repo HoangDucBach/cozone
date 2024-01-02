@@ -1,5 +1,6 @@
 import './zone-content.scss';
 import {Message} from "./chat/Message";
+import {Outlet} from "react-router-dom";
 
 export function ZoneContent(iterable) {
     const startCodePoint = 128512;
@@ -16,7 +17,7 @@ export function ZoneContent(iterable) {
             {/*        <div>{val}</div>*/}
             {/*    ))*/}
             {/*}*/}
-
+            <Outlet/>
         </div>
     );
 }
