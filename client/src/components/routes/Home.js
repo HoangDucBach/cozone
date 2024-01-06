@@ -78,6 +78,8 @@ export function Home() {
                 </svg>
             </div>
             <div className="home__effect-gradient-bottom"></div>
+
         </main>
+
     );
 }

@@ -4,7 +4,7 @@
   height: 100%;
   padding: 25px 50px;
 }
-.create-room input, {
+.create-room-form input, {
   all: unset;
   text-align: start;
   color: $text-color;
@@ -26,6 +26,31 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  position: absolute;
+  padding: 50px;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: $ui-color;
+  border-radius: 20px;
+
+}
+.create-room-form__exit-button {
+  all: unset;
+  align-self: end;
+  cursor: pointer;
+  svg {
+    path {
+      stroke: #525252;
+    }
+  }
+  &:hover svg {
+    path {
+      stroke: $color-30a;
+      transition: stroke 0.25s ease-out;
+    }
+  }
 }
 .create-room-form__title {
   color: #FFF;
@@ -51,7 +76,7 @@
   align-items: center;
 
   border-radius: 5px;
-  background: #161616;
+  background: #222126;
 }
 .field-input__layout-title-input {
   display: flex;

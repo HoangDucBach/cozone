@@ -1,43 +1,7 @@
 import "./my-zone.scss";
-import {ShortZone} from "../ui/zone/ShortZone";
-import {ShortTogether} from "../ui/zone/ShortTogether";
 import {ZoneNavbar} from "../headers/ZoneNavbar";
 import {ChatBox} from "../layouts/zone/chat/ChatBox";
 import {ZoneContent} from "../layouts/zone/ZoneContent";
-import {Outlet, Route, Routes} from "react-router-dom";
-import {Home} from "./Home";
-import {Watch} from "../layouts/zone/watch/Watch";
-
-function Zone() {
-    return (
-        <div className={"zone"}>
-            <ShortZone
-                key={"chat-zone"}
-                title={"Chat Zone"}
-                content={"Create your chat zone, chat to your friend, send your video, music or every thing !"}
-                color={"#F4365E"}
-            />
-            <ShortZone
-                key={"draw-zone"}
-                title={"Draw Zone"}
-                content={"Become a skilled artist, indulge in drawing everything with your friends!"}
-                color={"#FF7612"}
-            />
-            <ShortZone
-                key={"doc-zone"}
-                title={"Doc Zone"}
-                content={"Become a skilled artist, indulge in drawing everything with your friends!"}
-                color={"#0038FF"}
-            />
-            <ShortTogether
-                title={"Zone Watch together"}
-                content={"Enjoy relaxing and fun moments together on YouTube in CoZone!"}
-                color={"#FF7612"}
-                imgPath={"./images/LOL.png"}
-            />
-        </div>
-    );
-}
 
 export function MyZone() {
     return (

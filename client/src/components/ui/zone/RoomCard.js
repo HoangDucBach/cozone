@@ -1,3 +1,4 @@
+import './zone-ui.scss';
 export function RoomCard(props) {
     const roomName = props.roomName;
     const time = props.time;

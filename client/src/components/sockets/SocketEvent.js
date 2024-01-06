@@ -3,5 +3,7 @@ export const SocketEvent={
     SEND_MESSAGE: "send_message",
 
     CREATE_ROOM: "create_room",
+    RECEIVE_ROOM: "receive_room",
+
 
 }

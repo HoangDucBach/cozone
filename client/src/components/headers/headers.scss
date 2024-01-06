@@ -1,5 +1,6 @@
 @import "../../scss/variable";
 $padding:50px;
+// SERVER NAVBAR
 .server-navbar {
   display: flex;
   flex-direction: row;
@@ -27,4 +28,107 @@ $padding:50px;
   line-height: normal;
 
   background: $color-30a;
+}
+
+//TOP NAVBAR
+@import "../../scss/variable";
+
+$padding: 200px;
+.top-header {
+  background: rgb(7, 7, 7, 0.95);
+  box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 0 11vw;
+  width: 100vw;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.top-header__logo-layout {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+
+  width: 100vw;
+
+}
+
+.top-header__title {
+  color: $text-color;
+  @include font-family;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  & >#span-1{
+    color: $color-30a;
+  }
+}
+
+//Nav
+.top-header__nav {
+  display: inline-flex;
+  height: 74px;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+}
+
+.top-header__link {
+  all: unset;
+  color: #E1E1E1;
+  @include font-family;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+
+//My zone button
+#myzone {
+  display: flex;
+  width: 128px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 100px;
+  border: 1px solid #FFF;;
+
+  color: #E1E1E1;
+
+  @include font-family;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+//ZONE NAVBAR
+//Navbar
+.zone-navbar {
+  display: flex;
+  height: 100vh;
+  width: 80px;
+  padding: 186px 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: rgb(7, 7, 7, 0.95);
+  box-shadow: 5px 0 50px 0 rgba(0, 0, 0, 0.15);
 }

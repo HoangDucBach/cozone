@@ -2,7 +2,7 @@ import './App.css';
 import {TopNavbar} from "./components/headers/TopNavbar";
 import {Home} from "./components/routes/Home";
 import "./scss/_global.scss";
-import {Route, Routes} from "react-router-dom";
+import {Outlet, Route, Routes} from "react-router-dom";
 import {MyZone} from "./components/routes/MyZone";
 import {ZoneContent} from "./components/layouts/zone/ZoneContent";
 import {Watch} from "./components/layouts/zone/watch/Watch";
@@ -17,12 +17,13 @@ function App() {
         <div className="App">
             <TopNavbar/>
             <Routes>
-                <Route path="/">
+                <Route path="/" element={<Outlet/>}>
                     <Route path="home" element={<Home/>}>
 
                     </Route>
                     <Route path="myzone" element={<MyZone/>}>
                         <Route path="watch" element={<Watch/>}></Route>
+                        {/*<Route path="home" element={</>}></Route>*/}
                         <Route path="server" element={<Server/>}></Route>
                     </Route>
                 </Route>

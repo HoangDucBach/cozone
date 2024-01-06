@@ -11,7 +11,7 @@ export class RoomEvent {
 
     public handleCreateRoom = (room: any) => {
         console.log(room);
-        this.io.emit("create_room", room);
+        this.io.emit("receive_room", room);
     };
 
 }
